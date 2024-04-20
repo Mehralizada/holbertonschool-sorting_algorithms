@@ -4,7 +4,7 @@
 * selection_sort - function that sorts array of integers in
 * ascending order using the selection sort algorithm
 * @array: array of integers to be sorted
-* @size: size of array
+* size: size of array
 *
 */
 
@@ -28,7 +28,7 @@ void selection_sort(int *array, size_t size)
 		array[step] = array[min];
 		array[min] = temp;
 
-	if (step != in)
+	if (step != min)
 		print_array(array, size);
 	}
 }

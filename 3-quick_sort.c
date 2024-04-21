@@ -22,7 +22,7 @@ void swap(int *array, int *a, int *b, size_t size)
 * @array: array
 * @start: start
 * @end: end
-* size: size
+* @size: size
 * Return: index
 */
 

@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
-* swap - function for swapping two integers.
+* swap - function for swapping two integers
 * @array: array
 * @a: int1
 * @b: int2
@@ -47,4 +47,38 @@ int partition(int *array, int start, int end, size_t size)
 	if (index != end)
 		swap(array, &array[end], &array[index], size);
 	return (index);
+}
+
+/**
+* quickSort - sorts integers
+* @array: array
+* @low: low
+* @high: high
+* @size: size
+*/
+
+void quickSort(int *array, int low, int high, size_t size)
+{
+	int pivot;
+
+	if (low < high)
+	{
+		pivot = partition(array, low, high, size);
+		quickSort(array, low, pivot - 1, size);
+		quickSort(array, pivot + 1, high, size);
+	}
+}
+
+/**
+* quick_sort - algorithm for sorting integers
+* @array: array
+* @size: size
+*/
+
+void quick_sort(int *array, size_t size)
+{
+	if (array == NULL || size < 2)
+		return;
+
+	quickSort(array, 0, size - 1, size);
 }

@@ -71,7 +71,7 @@ void quickSort(int *array, int low, int high, size_t size)
 
 /**
 * quick_sort - algorithm for sorting integers
-* array: array
+* @array: array
 * @size: size
 */
 

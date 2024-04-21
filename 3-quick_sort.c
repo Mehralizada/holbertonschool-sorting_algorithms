@@ -50,7 +50,7 @@ int partition(int *array, int start, int end, size_t size)
 }
 
 /**
-* uickSort - sorts integers
+* quickSort - sorts integers
 * @array: array
 * @low: low
 * @high: high

@@ -22,7 +22,7 @@ void swap(int *array, int *a, int *b, size_t size)
 * @array: array
 * @start: start
 * @end: end
-* @size: size
+* size: size
 * Return: index
 */
 
@@ -50,7 +50,7 @@ int partition(int *array, int start, int end, size_t size)
 }
 
 /**
-* quickSort - sorts integers
+* uickSort - sorts integers
 * @array: array
 * @low: low
 * @high: high
@@ -71,7 +71,7 @@ void quickSort(int *array, int low, int high, size_t size)
 
 /**
 * quick_sort - algorithm for sorting integers
-* @array: array
+* array: array
 * @size: size
 */
 
